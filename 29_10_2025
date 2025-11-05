@@ -1,0 +1,347 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNIzAy02703Tt49dVgV2RVp",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/MurilloFerrari10/INTED_2025/blob/main/29_10_2025\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "1\n",
+        "num = int(input(\"digite um número:\"))\n",
+        "if num > 10:\n",
+        "  print(\"num,é maior que 10!\")\n",
+        "elif num < 10:\n",
+        "  print(\"num, é menor que 10!\")\n",
+        "else:\n",
+        "  print(\"num, é dez!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LTrkIWHdmDIn",
+        "outputId": "dafd4c41-95d6-4cac-ce2f-01f0341012fb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um número:8\n",
+            "num, é menor que 10!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "2\n",
+        "num = int(input(\"Digite um número inteiro: \"))\n",
+        "if num % 2 == 0:\n",
+        "  print(f\"{num} é um número par.\")\n",
+        "else:\n",
+        "  print(f\"{num} é um número ímpar.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bvyaVSVOpinv",
+        "outputId": "26bbe308-cd92-449a-fd03-4acd42b2d425"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número inteiro: 4\n",
+            "4 é um número par.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "3\n",
+        "nome = input(\"Digite um nome: \")\n",
+        "if 'a' in nome or 'A' in nome:\n",
+        "  print(f\"O nome '{nome}' contém a letra 'a'.\")\n",
+        "else:\n",
+        "  print(f\"O nome '{nome}' não contém a letra 'a'.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0TB6MQT7pyF-",
+        "outputId": "cdac7fb8-e7ef-4c0d-815a-4bbd454c657f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um nome: murillo\n",
+            "O nome 'murillo' não contém a letra 'a'.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "4\n",
+        "num = int(input(\"Digite um número inteiro: \"))\n",
+        "if num % 5 == 0:\n",
+        "  print(f\"{num} é múltiplo de 5.\")\n",
+        "else:\n",
+        "  print(f\"{num} não é múltiplo de 5.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MA_elWUep_Q8",
+        "outputId": "af7f21d2-de22-4e98-ec61-bc7641feffcb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número inteiro: 30\n",
+            "30 é múltiplo de 5.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "5\n",
+        "temperatura = float(input(\"Digite a temperatura atual em °C: \"))\n",
+        "if temperatura > 30:\n",
+        "  print(\"Está quente!\")\n",
+        "else:\n",
+        "  print(\"Está frio!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VOt2zct_qTpv",
+        "outputId": "6051b84c-0a0d-4a2e-ee31-65d9a1ae7732"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a temperatura atual em °C: 12\n",
+            "Está frio!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "6\n",
+        "opcao = input(\"Digite 'S' para continuar ou 'N' para sair: \")\n",
+        "if opcao.upper() == 'S':\n",
+        "  print(\"Você escolheu continuar.\")\n",
+        "elif opcao.upper() == 'N':\n",
+        "  print(\"Você escolheu sair.\")\n",
+        "else:\n",
+        "  print(\"Opção inválida. Por favor, digite 'S' ou 'N'.\")"
+      ],
+      "metadata": {
+        "id": "X5d8ENcpr76G",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "61b130c6-f66a-4c0c-c6ea-6b4be62085a8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite 'S' para continuar ou 'N' para sair: s\n",
+            "Você escolheu continuar.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "7\n",
+        "num = float(input(\"Digite um número: \"))\n",
+        "if num > 0:\n",
+        "  print(f\"{num} é um número positivo.\")\n",
+        "elif num < 0:\n",
+        "  print(f\"{num} é um número negativo.\")\n",
+        "else:\n",
+        "  print(\"O número é zero.\")"
+      ],
+      "metadata": {
+        "id": "RHCAgYWIsOdv",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "5b66ea22-d630-4f0c-fe4b-a066be827822"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número: 10\n",
+            "10.0 é um número positivo.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "8\n",
+        "dia = int(input(\"Digite um número de 1 a 7: \"))\n",
+        "\n",
+        "if dia_numero == 1:\n",
+        "  print(\"Domingo.\")\n",
+        "elif dia_numero == 2:\n",
+        "  print(\"Segunda-feira.\")\n",
+        "elif dia_numero == 3:\n",
+        "  print(\"Terça-feira.\")\n",
+        "elif dia_numero == 4:\n",
+        "  print(\"Quarta-feira.\")\n",
+        "elif dia_numero == 5:\n",
+        "  print(\"Quinta-feira.\")\n",
+        "elif dia_numero == 6:\n",
+        "  print(\"Sexta-feira.\")\n",
+        "elif dia_numero == 7:\n",
+        "  print(\"Sábado.\")\n",
+        "else:\n",
+        "  print(\"Número inválido. Por favor, digite um número de 1 a 7.\")"
+      ],
+      "metadata": {
+        "id": "xwXUBYUbshQP",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "29dcbabf-ac3e-4f8f-ae3c-2c376400701a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número de 1 a 7: 5\n",
+            "O dia correspondente é Quinta-feira.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "9\n",
+        "ano = int(input(\"Digite um ano: \"))\n",
+        "\n",
+        "if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):\n",
+        "  print(f\"O ano {ano} é bissexto.\")\n",
+        "else:\n",
+        "  print(f\"O ano {ano} não é bissexto.\")"
+      ],
+      "metadata": {
+        "id": "xSKmZoxHtLQI",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "c66c700a-6511-4378-81dc-7190fa59be6f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um ano: 4\n",
+            "O ano 4 é bissexto.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "10\n",
+        "horas_trabalhadas = float(input(\"Digite a quantidade de horas trabalhadas: \"))\n",
+        "valor_por_hora = float(input(\"Digite o valor por hora: \"))\n",
+        "\n",
+        "if horas_trabalhadas <= 40:\n",
+        "  salario = horas_trabalhadas * valor_por_hora\n",
+        "else:\n",
+        "  horas_normais = 40\n",
+        "  horas_extras = horas_trabalhadas - horas_normais\n",
+        "  salario = (horas_normais * valor_por_hora) + (horas_extras * valor_por_hora * 1.5)\n",
+        "\n",
+        "print(f\"O salário total é de R${salario:.2f}\")"
+      ],
+      "metadata": {
+        "id": "rjG7-748tjxI",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "4e549524-15fc-44f4-c8ca-af0c0ddd3bce"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a quantidade de horas trabalhadas: 19\n",
+            "Digite o valor por hora: 20\n",
+            "O salário total é de R$380.00\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
